@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/login_screen"
+android:gravity="center"
+android:orientation="vertical">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="24dp"
+    android:gravity="center"
+    android:fontFamily="@font/italiana"
+    android:text="Get In"
+    android:textColor="@color/head_text"
+    android:textSize="24sp"
+    android:textStyle="bold" />
+
+<!--    android:drawableStart="@drawable/ic_email"-->
+
+<EditText
+    android:id="@+id/usernameEditText"
+    android:layout_width="207sp"
+    android:layout_height="48dp"
+    android:gravity="center"
+    android:fontFamily="@font/italiana"
+    android:hint="Username"
+    android:inputType="textEmailAddress"
+    android:textColorHint="@color/head_text"
+    android:textColor="@color/head_text" />
+
+<EditText
+    android:id="@+id/passwordEditText"
+    android:layout_width="207sp"
+    android:layout_height="48dp"
+    android:layout_marginTop="12dp"
+    android:fontFamily="@font/italiana"
+    android:gravity="center"
+    android:hint="Password"
+    android:inputType="textPassword"
+    android:textColorHint="@color/head_text"
+    android:textColor="@color/head_text" />
+
+<Button
+    android:id="@+id/loginButton"
+    android:layout_width="207sp"
+    android:fontFamily="@font/italiana"
+    android:layout_height="48sp"
+    android:layout_marginTop="20dp"
+    android:backgroundTint="@color/head_text"
+    android:text="Login"
+    android:textColor="@color/black" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    android:fontFamily="@font/italiana"
+    android:text="Your first time here?"
+    android:textColor="@color/head_text"
+    android:textSize="14sp" />
+
+<TextView
+    android:id="@+id/joinUsText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="24dp"
+    android:fontFamily="@font/italiana"
+    android:text="Join Us"
+    android:textColor="@color/head_text"
+    android:textSize="18sp"
+    android:textStyle="bold" />
+
+</LinearLayout>
