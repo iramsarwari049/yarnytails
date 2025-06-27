@@ -1,5 +1,6 @@
 package com.example.yarnytails
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -35,21 +36,23 @@ class MainActivity : AppCompatActivity() {
                 ViewGroup.LayoutParams.MATCH_PARENT
             )
         )
+//        Handler(Looper.getMainLooper()).postDelayed({
+//            (splashView.parent as? ViewGroup)?.removeView(splashView)
+//        }, 5000)
+//
+//        //Login Screen
+//        val loginView = layoutInflater.inflate(R.layout.activity_login,null)
+//        addContentView(
+//            loginView,
+//            ViewGroup.LayoutParams(
+//                ViewGroup.LayoutParams.MATCH_PARENT,
+//                ViewGroup.LayoutParams.MATCH_PARENT
+//            )
+//        )
         Handler(Looper.getMainLooper()).postDelayed({
-            (splashView.parent as? ViewGroup)?.removeView(splashView)
-        }, 5000)
-
-        //Login Screen
-        val loginView = layoutInflater.inflate(R.layout.activity_login,null)
-        addContentView(
-            loginView,
-            ViewGroup.LayoutParams(
-                ViewGroup.LayoutParams.MATCH_PARENT,
-                ViewGroup.LayoutParams.MATCH_PARENT
-            )
-        )
-        Handler(Looper.getMainLooper()).postDelayed({
-            (loginView.parent as? ViewGroup)?.removeView(loginView)
+            val loginIntent = Intent(this, LoginActivity::class.java)
+            startActivity(loginIntent)
+            finish()
         }, 5000)
 
         //nav bar

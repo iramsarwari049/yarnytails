@@ -8,5 +8,5 @@
     <color name="head_text">#4C9298</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="background_dark">#FFFFFF</color>
+    <color name="background_dark">#FF000000</color>
 </resources>

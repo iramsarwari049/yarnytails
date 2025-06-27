@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_screen"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/italiana"
+        android:gravity="center"
+        android:text="See who is finally here to join Us!"
+        android:textColor="@color/head_text"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/italiana"
+        android:text=""
+        android:textColor="@color/head_text"
+        android:textSize="14sp" />
+
+
+    <!--    android:drawableStart="@drawable/ic_email"-->
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="207sp"
+        android:layout_height="48dp"
+        android:fontFamily="@font/italiana"
+        android:gravity="center"
+        android:hint="Username"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/head_text"
+        android:textColorHint="@color/head_text" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="207sp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/italiana"
+        android:gravity="center"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/head_text"
+        android:textColorHint="@color/head_text" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="207sp"
+        android:layout_height="48sp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/head_text"
+        android:fontFamily="@font/italiana"
+        android:text="Let's Gooooo!"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/joinUsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="124dp"
+        android:fontFamily="@font/italiana"
+        android:text="Join Us"
+        android:textColor="@color/head_text"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
